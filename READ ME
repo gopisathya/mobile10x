@@ -1,0 +1,9 @@
+
+# TEST
+
+To Run type the below command in cmd:
+
+>git clone  https://github.com/gopisathya/mobile10x.git
+>cd folder
+>npm install
+>node server
