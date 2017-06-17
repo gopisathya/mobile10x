@@ -1,0 +1,91 @@
+<md-card ng-controller="mainCtrl as ctrl"  >
+ 
+<div class="container">
+<form name="carrymodelForm" class="md-padding" novalidate>
+<h4> Below select  state of India </h4>
+ <div layout="row" >
+  <div class="col-md-4">
+
+	      <md-input-container class="md-block">
+				 <md-select class="tiptext" ng-model="states" placeholder="select the state"  >
+	                 
+			  <md-option class="tiptext"   ng-model="TN" ng-mouseover="TN=true;KE=false;KA=false;GA=false" ng-mouseleave="fun()" value="TamilNadu">TamilNadu</md-option>
+	          <md-option class="tiptext"  ng-model="KE" ng-mouseover="TN=false;KE=true;KA=false;GA=false" value="Kerala">Kerala</md-option>
+			  <md-option class="tiptext" ng-model="KA" ng-mouseover="TN=false;KE=false;KA=true;GA=false"  value="Karnataka" >Karnataka</md-option>
+	          <md-option class="tiptext"  ng-model="AP" ng-mouseover="TN=false;KE=false;KA=false;GA=true" value="Goa">Goa</md-option>
+	        </md-select>
+	      
+</md-input-container>
+</div>
+
+
+<!-- TamilNadu -->
+<div layout="column" >
+  <div ng-show="TN"  style="float: right;margin-top: 1%;">
+<md-content layout-padding  class="cont">
+
+  <img src="img/TN.jpg" alt="TamilNadu" style="width:150px;">Tamil Nadu, a South Indian state, is famed for its Dravidian-style Hindu temples. In Madurai, Meenakshi Amman Temple has high ‘gopuram’ towers ornamented with colourful figures. On Pamban Island, Ramanathaswamy Temple is a pilgrimage site. The town of Kanyakumari, at India’s southernmost tip, is the site of ritual sunrises. Capital Chennai is known for beaches and landmarks including 1644 colonial Fort St. George.
+    <a href="https://en.wikipedia.org/wiki/Tamil_Nadu">more ...</a>
+</md-content>
+</div>
+ </div>
+
+
+
+<!-- kerala -->
+<div layout="column" >
+  <div ng-show="KE"  style="float: right;margin-top: 1%;">
+<md-content layout-padding  class="cont">
+<img src="img/KE.jpg" alt="Kerala" style="width:150px;">
+    Kerala, a state on India's tropical Malabar Coast, has nearly 600km of Arabian Sea shoreline. It's known for its palm-lined beaches and backwaters, a network of canals. Inland are the Western Ghats, mountains whose slopes support tea, coffee and spice plantations as well as wildlife. National parks like Eravikulam and Periyar, plus Wayanad and other sanctuaries, are home to elephants, langur monkeys and tigers.
+    <a href="https://en.wikipedia.org/wiki/Kerala">more ...</a>
+</md-content>
+</div>
+ </div>
+ 
+<!-- karnataka -->
+<div layout="column" >
+  <div ng-show="KA"  style="float: right;margin-top: 1%;">
+<md-content layout-padding class="cont">
+<img src="img/KA.jpg" alt="Karnataka" style="width:150px;">
+    Karnataka is a state in southwest India with Arabian Sea coastlines. The capital, Bengaluru (formerly Bangalore), is a high-tech hub known for its shopping and nightlife. To the southwest, Mysore is home to lavish temples including Mysore Palace, former seat of the region’s maharajas. Hampi, once the medieval Vijayanagara empire’s capital, contains ruins of Hindu temples, elephant stables and a stone chariot.
+<a href="https://en.wikipedia.org/wiki/Karnataka">more ...</a>
+</md-content>
+</div>
+ </div>
+ 
+
+<!-- GOA -->
+<div layout="column" >
+  <div ng-show="GA"  style="float: right;margin-top: 1%;">
+<md-content layout-padding class="cont">
+<img src="img/GA.jpg" alt="Karnataka" style="width:150px;">
+    Goa is a state in western India with coastlines stretching along the Arabian Sea. Its long history as a Portuguese colony prior to 1961 is evident in its preserved 17th-century churches and the area’s tropical spice plantations. Goa is also known for its beaches, ranging from popular stretches at Baga and Palolem to those in laid-back fishing villages such as Agonda.
+<a href="https://en.wikipedia.org/wiki/Goa">more ...</a>
+</md-content>
+</div>
+ </div>
+
+
+</div>
+</form>
+</div>
+
+</md-card>
+ <style type="text/css">
+ 	.cont{
+ 		margin-left: 24px;border-size:1px;border-style:solid;border-color:#a7bfe5;
+ 	}
+img {
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 150px; /* Set a small width */
+}
+
+/* Add a hover effect (blue shadow) */
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+</style>
+ 
